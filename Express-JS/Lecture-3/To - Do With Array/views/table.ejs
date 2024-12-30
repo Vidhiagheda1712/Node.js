@@ -167,6 +167,7 @@
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Action</th>
+                <th>Update</th>
             </tr>
         </thead>
         <tbody>
@@ -185,6 +186,7 @@
                         <%= val.phone %>
                     </td>
                     <td><a href="/deleteuser?deleteId=<%= val.id %>" class="deletedata">Delete</a></td>
+                    <td><a href="/edituser?id=<%= val.id %>" class="deletedata">Edit</a></td>
                 </tr>
                 <% }) %>
         </tbody>
